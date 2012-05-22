@@ -7,7 +7,7 @@ class DomainsbotApi
 	
 	public function __construct($token)
 	{
-		$this->urlToPost = 'http://xml.domainsbot.com/xmlservices/spinner.aspx?';
+		$this->urlToPost = 'http://api.domainsbot.com/v4/spinner?';
 		$this->token = $token;
 	}
     
