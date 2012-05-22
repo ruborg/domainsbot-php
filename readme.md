@@ -21,7 +21,10 @@ $opts = array(
 			
 echo $client->GetSuggestion("findnames",$opts ,true);
 ```
+### Digging Deeper
 
+The [full documentation](http://developers.domainsbot.com/ "DomainsBot API documentation") explains all the awesome features available to
+use.
 
 
 
