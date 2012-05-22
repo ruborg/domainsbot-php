@@ -5,7 +5,7 @@ A PHP library for using DomainsBot Spinner API.
 
 ## Installation
 [download the source code
-(ZIP)](https://github.com/DomainsBot/domainsbot-php/zipball/master "domainsbot-csharp
+(ZIP)](https://github.com/DomainsBot/domainsbot-php/zipball/master "domainsbot-php
 source code") for `domainsbot-php` and place it your php web site directory
 
 ## Getting Started
@@ -19,7 +19,7 @@ $opts = array(
 			  // For the complete list of possible parameters read the full documentation at http://developers.domainsbot.com
 			);
 			
-echo $client->GetSuggestion("findnames",  ,true);
+echo $client->GetSuggestion("findnames",$opts ,true);
 ```
 
 
