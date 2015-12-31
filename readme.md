@@ -13,7 +13,7 @@ source code") for `domainsbot-php` and place it your php web site directory
 Add the following to composer.json *require* section
 
 ```json
-"domainsbot/domainsbot-php": "*"
+"domainsbot/domainsbot-php": "dev-master"
 ```
 
 
