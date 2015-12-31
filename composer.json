@@ -1,0 +1,8 @@
+{
+    "name": "domainsbot/domainsbot-php",
+    "autoload": {
+        "psr-0" : {
+            "DomainsBot\\" : "src"
+        }
+    }
+}
