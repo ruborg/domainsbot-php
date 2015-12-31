@@ -1,5 +1,6 @@
 {
     "name": "domainsbot/domainsbot-php",
+    "version": "dev-master",
     "autoload": {
         "psr-0" : {
             "DomainsBot\\" : "src"
