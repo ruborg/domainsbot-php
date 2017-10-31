@@ -7,11 +7,11 @@ class DomainsbotApi
 
 	public function __construct($token)
 	{
-		$this->urlToPost = 'https://api-2445581410012.staging.apicast.io/v5/recommend?';
+		$this->urlToPost = 'http://api5.domainsbot.com/v5/recommend?';
 		$this->token = $token;
 	}
 
-    public function GetSuggestion ($key, array $params = array(), $getJSON = true)
+  public function GetSuggestion ($key, array $params = array(), $getJSON = true)
     {
 
 	// Post string to DomainBot api, Build the request string from global variables
@@ -21,7 +21,7 @@ class DomainsbotApi
 	    $requestString .= "&". $k . "=" . $value;
 	}
 
-	$requestString .= "&apikey=" . $this->token;
+	$requestString .= "&authtoken=" . $this->token;
 
 	if( $getJSON)
 		return json_decode($this->SendRequest($requestString));
@@ -30,9 +30,9 @@ class DomainsbotApi
 
     }
 
-    public function GetSuggestionRawUrl ($rawUrl, $getJSON = true)
+  public function GetSuggestionRawUrl ($rawUrl, $getJSON = true)
     {
-	$requestString = $this->urlToPost .$rawUrl . "&apikey=" . $this->token;
+	$requestString = $this->urlToPost .$rawUrl . "&authtoken=" . $this->token;
 
 	if( $getJSON)
 		return json_decode($this->SendRequest($requestString));
